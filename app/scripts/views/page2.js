@@ -5,10 +5,11 @@ function renderPage2() {
     $('main').empty().append(`
       <section class="page-two">
 				<form class="personposter">
-					<input type="text" id="personfirst">
-					<input type="text" id="personlast">
-					<input type="text" id="personaddress">
-					<input type="text" id="personphone">
+          <h3>The Ultimate Compendium of Persons</h3>
+					<input type="text" id="personfirst" placeholder="First Name">
+					<input type="text" id="personlast" placeholder="Last Name">
+					<input type="text" id="personaddress" placeholder="Address">
+					<input type="text" id="personphone" placeholder="Phone Number">
 					<input type="submit" id="personsubmit" value="SUBMIT">
 				</form>
 			</section>

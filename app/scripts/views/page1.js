@@ -5,8 +5,9 @@ function renderPage1() {
     $('main').empty().append(`
       <section class="page-one">
         <form class="blogposter">
-          <input type="text" id="blogtitle">
-          <textarea id="blogwriter" rows="8" cols="40"></textarea>
+          <h3>Your New Blog</h3>
+          <input type="text" id="blogtitle" placeholder="Title">
+          <textarea id="blogwriter" rows="8" cols="40" placeholder="Write your story..."></textarea>
           <input type="submit" id="blogsubmit" value="SUBMIT">
         </form>
       </section>
