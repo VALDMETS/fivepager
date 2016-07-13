@@ -17,23 +17,18 @@ const Router = Bb.Router.extend({
     page5  : 'fiveFunction'
   },
   oneFunction: function(){
-    console.log('one!');
     renderPage1();
   },
   twoFunction: function() {
-    console.log('two!');
     renderPage2();
   },
   threeFunction: function() {
-    console.log('three!');
     renderPage3();
   },
   fourFunction: function() {
-    console.log('four!');
     renderPage4();
   },
   fiveFunction: function() {
-    console.log('five!');
     renderPage5();
   },
 });

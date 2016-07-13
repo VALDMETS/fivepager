@@ -4,11 +4,14 @@ import router from '../router';
 
 function navSystem (){
 
+  // Lord knows I tried to make this work:
+  //
   // for (var i = 1; i <= 5; i++) {
   //   $(String('#page' + i)).click(function(){
   //     router.navigate(String('page' + i), {trigger: true});
   //   });
   // }
+  
   $('#page1').click(function(){
     router.navigate('page1', {trigger: true});
   });

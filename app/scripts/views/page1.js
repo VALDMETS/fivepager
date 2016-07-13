@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import Blog from '../models/blog';
 
 function renderPage1() {
     $('main').empty().append(`
@@ -10,6 +11,21 @@ function renderPage1() {
         </form>
       </section>
       `);
+
+    $('#blogsubmit').click(function(evt){
+      evt.preventDefault();
+      let currentBlog = new Blog({
+        content: $('textarea').val(),
+        name: $('#blogtitle').val()
+      });
+      currentBlog.save(null, {
+        success: function() {
+          console.log('post successful');
+          $('textarea').val('');
+          $('#blogtitle').val('');
+        }
+      });
+    });
 
 
 
