@@ -12,13 +12,12 @@ function renderPage3() {
         <div class="blogreader">
         </div>
       </section>
-      `);
+    `);
 
     let blogList = new BlogCollection().fetch({
       success: function(pull){
         let blogList = _.toArray(pull.attributes);
         blogList.forEach(function(blogPost){
-          // console.log(blogPost);
           $('.bloglist').append(`<h2 class="blogselect" data-id="${blogPost._id}">${blogPost.name}</h2>`);
         });
         $('.bloglist').click(function(evt){

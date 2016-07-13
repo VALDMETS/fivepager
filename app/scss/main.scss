@@ -81,12 +81,13 @@ input[type="submit"] {
 }
 
 .bloglist {
+  box-sizing: border-box;
   display: block;
   width: 30%;
   border-right: 1px solid #EEE;
   height: 48vw;
   float: left;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 .blogreader {
   display: block;
@@ -96,4 +97,7 @@ input[type="submit"] {
 }
 h1 {
   text-align: center;
+}
+a {
+  display: block;
 }

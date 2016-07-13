@@ -11,7 +11,7 @@ function renderPage1() {
           <input type="submit" id="blogsubmit" value="SUBMIT">
         </form>
       </section>
-      `);
+    `);
 
     $('#blogsubmit').click(function(evt){
       evt.preventDefault();

@@ -13,7 +13,7 @@ function renderPage2() {
 					<input type="submit" id="personsubmit" value="SUBMIT">
 				</form>
 			</section>
-      `);
+    `);
 
       $('#personsubmit').click(function(evt){
         evt.preventDefault();
